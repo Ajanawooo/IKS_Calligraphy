@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Pattern from '$lib/components/1_Startseite.svelte';
+
+
+</script>
+
+<div class="app-container">
+	<!-- <Header /> -->
+	<main class="app-main">
+		<Pattern />
+	</main>
+</div>
