@@ -1,17 +1,17 @@
 <script>
 	import { goto } from '$app/navigation';
-	
-	function handleStart() {
-		goto('/KalligrafieIntro');
+		import Strichübung from '$lib/assets/Strichübung.jpg';
+
+	function handleNext() {
+		goto('/maobi');
 	}
 </script>
 
 <div class="container">
 	<div class="content">
-		<h1>DIE KUNST DES SCHÖNSCHREIBENS</h1>
-				<h2>Setze die Kopfhörer auf und erfahre mehr über Kalligrafie</h2>
-
-		<button on:click={handleStart}>start</button>
+		<h2>Nimm den Stift in die Hand und zeichne die Linien nach.</h2>
+		<img src={Strichübung} alt="Strichübung" />
+		<button on:click={handleNext}>Weiter</button>
 	</div>
 </div>
 
@@ -33,6 +33,14 @@
 		font-size: 2rem;
 		color: #333;
 		margin: 0 0 2rem 0;
+	}
+	
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: 8px;
+		margin: 0 0 2rem 0;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 	}
 	
 	button {
